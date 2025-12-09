@@ -5,26 +5,48 @@
 # If you fail, the festival cannot legally open.
 
 # Starting Data
-    # foods = ["pizza", "tacos", "bbq", "tacos", "sushi", "corn", "bbq", "ice cream"]
-    # stages = ("Main Stage", "Hip-Hop Zone", "Jazz Corner", "Indie Alley")
-    # restricted = {"glass bottles", "weapons", "alcohol", "alcohol"}
-    # attendance = [120, 130, 125, 145, 150, 148, 155, 160, 158, 162]
+foods = ["pizza", "tacos", "bbq", "tacos", "sushi", "corn", "bbq", "ice cream"],
+stages = ("Main Stage", "Hip-Hop Zone", "Jazz Corner", "Indie Alley"),
+restricted = ["glass bottles", "weapons", "alcohol", "alcohol"],
+attendance = [120, 130, 125, 145, 150, 148, 155, 160, 158, 162]
 
-# Task 1 — Clean the Food Vendor List
-    # 1. Remove duplicates while keeping only the first occurrence.
-    # 2. Add "ramen" and "fried rice".
-    # 3. Insert "smoothies" at index 2.
-    # 4. Sort the list alphabetically.
-    # 5. Print the final vendor list.
+# # Task 1 — Clean the Food Vendor List
+#     # 1. Remove duplicates while keeping only the first occurrence.
+# unique_list = list(set(foods))
+# print(unique_list)
 
-#Task 1.5 
-    # combine all the list into a nested list called festival_data
-    #print out the new nested list(use a for loop to print each item on a new line)
+#     # 2. Add "ramen" and "fried rice".
+# foods += ["ramen"]
+# print(foods)
+# foods += ["fried rice"]
+# print(foods)
+#     # 3. Insert "smoothies" at index 2.
+# foods [1:1]+= ["smoothies"]
 
+# print(foods)
+#     # 4. Sort the list alphabetically.
+# foods.sort()
+
+#     # 5. Print the final vendor list.
+# print(foods)
+# #Task 1.5 
+#     # combine all the list into a nested list called festival_data
+# all_lists= [
+# ["pizza", "tacos", "bbq", "tacos", "sushi", "corn", "bbq", "ice cream"],
+# ("Main Stage", "Hip-Hop Zone", "Jazz Corner", "Indie Alley"),
+# {"glass bottles", "weapons", "alcohol", "alcohol"},
+# [120, 130, 125, 145, 150, 148, 155, 160, 158, 162]]
+#     #print out the new nested list(use a for loop to print each item on a new line)
+# for row in all_lists:
+#     for all_lists in row:
+#         print(all_lists, end=" ")
+#     print()
 
 # Task 2 — Stage Map
     # 1. Print the second stage.
+print(all_lists[1][2]) 
     # 2. Print the last two stages.
+
     # 3. Convert the tuple into a list and add "Rock Arena".
     # 4. Convert it back into a tuple.
     # 5. Print the updated tuple.
@@ -32,6 +54,8 @@
 
 # Task 3 — Restricted Items
     # 1. Add "fireworks".
+restricted += ["fireworks"]
+print(restricted)
     # 2. Try adding "weapons" again.
     # 3. Remove "alcohol".
     # 4. Check if "glass bottles" is still restricted.
